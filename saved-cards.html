@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#083644" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Збережені платівки</title>
+  </head>
+  <body>
+    <nav>
+      <div class="back-button">
+        <a href="#" id="back-button" target="_blank">
+          <img src="./img/icon/arrow.png" alt="" />
+          <span class="back-button__text">Back</span>
+        </a>
+      </div>
+      <div class="save-list">
+        <a href="#" class="save-list__heart"
+          ><img src="./img/icon/heart.png" alt=""
+        /></a>
+        <a href="index.html" class="save-list__folder"><img class="home" src="./img/icon/home.png" alt=""
+            /></a>
+      </div>
+    </nav>
+    <header>
+		<div class="container">
+			<div class="search-form">
+				<form id="search-form">
+				  <input
+					class="search-form__artist"
+					placeholder="Artist"
+					type="text"
+					id="artist"
+					name="artist"
+					maxlength="50"
+				  />
+				  <div class="search-form__small">
+					<select class="search-form__small-select" id="genre" name="genre">
+					  <option value="">Genre</option>
+					  <option value="Rock">Rock</option>
+					  <option value="Progressive Rock">Progressive Rock</option>
+					  <option value="Blues">Blues</option>
+					  <option value="Jazz">Jazz</option>
+					  <option value="R&B">R&B</option>
+					  <option value="Hip-hop">Hip-hop</option>
+					  <option value="Punk">Punk</option>
+					</select>
+		
+					<select class="search-form__small-select" id="decade" name="decade">
+					  <option value="">Decade</option>
+					  <option value="1950-60">1950-60 рр.</option>
+					  <option value="1960-70">1960-70 рр.</option>
+					  <option value="1970-80">1970-80 рр.</option>
+					  <option value="1980-90">1980-90 рр.</option>
+					  <option value="1990-00">1990-00 рр.</option>
+					  <option value="2000-10">2000-10 рр.</option>
+					  <option value="2010-20">2010-20 рр.</option>
+					  <option value="2020-30">2020-30 рр.</option>
+					</select>
+				  </div>
+		
+				  <select class="search-form__select" id="country" name="country">
+					<option value="">Country</option>														
+					<option value="Brazil">Brazil</option>				
+					<option value="Canada">Canada</option>					
+					<option value="France">France</option>
+					<option value="Germany">Germany</option>					
+					<option value="Italy">Italy</option>															
+					<option value="Netherlands">Netherlands</option>					
+					<option value="Norway">Norway</option>									
+					<option value="Swaziland">Swaziland</option>
+					<option value="Sweden">Sweden</option>
+					<option value="Switzerland">Switzerland</option>
+					<option value="Ukraine">Ukraine</option>
+					<option value="UK">United Kingdom</option>
+					<option value="USA">United States</option>
+				  </select>
+		
+				  <button class="search-form__btnsearch" type="submit">Search</button>
+				</form>
+			  </div>
+		</div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="vinyl-card__list"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="pagination">
+          <div class="pages"></div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./js/saved-cards.js">
+    </script>
+  </body>
+</html>

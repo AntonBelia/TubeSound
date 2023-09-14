@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap");
+@media (min-height: 20rem) {
+  body {
+    background-color: #083644;
+  }
+}
+/*Обнулення стилів*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+
+html {
+  background-color: #ffffff;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: #ffffff;
+}
+
+nav {
+	background-color: #083644;
+	height: 62px;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+  }
+  
+  .container {
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0 20px;
+  }
+  
+  .back-button {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+	letter-spacing: 0em;
+	text-align: left;
+  
+	margin: 25px 10px;
+  }
+  .back-button__text {
+	margin: 0 10px;
+	color: white;
+  }
+  
+  .save-list a {
+	padding-left: 21px;
+  }
+
+  .home {
+	margin-right: -12px;
+	position:sticky;
+	right: 15px;
+	top: 39px;
+	width: 24px;
+  }
+
+  .search-form {
+	padding: 16px 0 18px 0;
+	border-radius: 5px;
+  }
+  
+  .search-form__artist {
+	width: 100%;
+	height: 42px;
+	font-size: 16px;
+	padding: 0 16px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	border: 1px solid #edeef0;
+  }
+  
+  .search-form__select {
+	width: 100%;
+	height: 42px;
+	font-size: 16px;
+	color: #6c7072;
+  
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #edeef0;
+	border-radius: 5px;
+	appearance: none;
+	background-image: url("./img/icon/arrowDown.png");
+	background-repeat: no-repeat, repeat;
+	background-position: right 0.7em top 50%, 0 0;
+	background-size: 0.65em auto, 100%;
+  }
+  
+  .search-form__small {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -6px;
+  }
+  
+  .search-form__small-select {
+	width: 100%;
+	height: 42px;
+	font-size: 16px;
+	color: #6c7072;
+  
+	padding: 10px;
+	margin: 0 6px 15px 6px;
+	border: 1px solid #edeef0;
+	border-radius: 5px;
+	appearance: none;
+	background-image: url("./img/icon/arrowDown.png");
+	background-repeat: no-repeat, repeat;
+	background-position: right 0.7em top 50%, 0 0;
+	background-size: 0.65em auto, 100%;
+  }
+  
+  .search-form__btnsearch {
+	font-size: 16px;
+  
+	background-color: #083644;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	height: 44px;
+  }
+
+  
+  
+  .vinyl-card__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -6px;
+	justify-content: center;
+  }
+  
+  .vinyl-card {
+	position: relative;
+	margin: 0 6px;
+	max-width: 169px;
+	height: 338px;
+  }
+  
+  .vinyl-card h2 {
+	color: #0a2530;
+	font-weight: 700;
+  }
+  
+  .vinyl-card h3 {
+	color: #0a2530;
+	font-weight: 500;
+  }
+  
+  .vinyl-card span {
+	color: #738286;
+  }
+  
+  .vinyl-card__btn {
+	font-size: 16px;
+  
+	background-color: #083644;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	height: 44px;
+  
+	background-image: url("./img/icon/plus.png");
+	background-repeat: no-repeat, repeat;
+	background-position: right 3em top 50%, 0 0;
+	background-size: 1em auto, 100%;
+  }
+  
+  .vinyl-card__btn:hover {
+	background-color: #595471;
+  }
+  
+  .vinyl-card__like {
+	position: absolute;
+	border-radius: 5px;
+	background-color: #fff;
+	width: 24px;
+	height: 24px;
+	top: 10px;
+	left: 10px;
+	transition: background-color 0.3s ease-out;
+  
+	background-image: url("./img/icon/heartBlack.png");
+	background-repeat: no-repeat, repeat;
+	background-position: right 0.2em top 60%, 0 0;
+	background-size: 1.1em auto, 100%;
+  }
+  
+  .vinyl-card__like:hover {
+	background-color: #d03f3f;
+	cursor: pointer;
+  }
+  
+  .pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+	margin: 20px auto;
+	width: 150px;
+  }
+  .pages {
+	display: flex;
+	flex-direction: row;
+	gap: 2px;
+  }
+  .page {
+	color: #738286;
+	height: 40px;
+	width: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+  
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+  }
+  .page:hover {
+	background-color: #083644;
+	color: #fff;
+  }
+  
+  .active {
+	background-color: #083644;
+	color: #fff;
+  }
